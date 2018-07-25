@@ -9,9 +9,11 @@
 		table_namegr.get(options.table); 
 		table_name = table_namegr.name.toString();
 	}
+	data.table_name = table_name;
 
 	//check to see if an encoded query was provided
 	var encoded_query = $sp.getParameter('query') || options.encoded_query;
+	data.encoded_query = encoded_query;
 	data.tooltip = 'Searching ' + table_name + ' with query: ' + encoded_query+'.';//temp
 
 	//retrieve records according to the widget options query
