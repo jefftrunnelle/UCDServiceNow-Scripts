@@ -177,7 +177,7 @@ function writeKbMixed(count, v1, v2, v3) {
 
 function writeKbMultiple(count) {
     var base_url = "servicehub/?id=ucd_kb_article&sys_id=";
-    var widget_base = "servicehub?id=incident_close_link&inc="; //need 15&kb=20
+    var widget_base = "servicehub?id=ucd_index&inc="; //need 15&kb=20
 
     // Set up basic query for IT - Public Knowledge base
     var query = "";
