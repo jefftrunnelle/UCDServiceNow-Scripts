@@ -9,8 +9,9 @@ function submitDirect() {
     var kb = new GlideRecord("kb_knowledge");
     kb.source = current.sys_id;
     kb.short_description = current.short_description;
+    kb.u_question = 'Knowledge submission from ' + current.number;
     kb.sys_domain = current.sys_domain;
-    kb.text = current.comments.getHTMLValue();
+    kb.u_answer = current.u_knowledge_details + current.comments.getHTMLValue(); //combined
     kb.workflow_state = 'draft';
     kb.kb_knowledge_base = gs.getProperty("glide.knowman.task_kb", "dfc19531bf2021003f07e2c1ac0739ab");
     kbSysId = kb.insert();
