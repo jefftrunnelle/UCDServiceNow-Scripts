@@ -48,3 +48,13 @@ hours(current.opened_at, score_end);
  * 
  * 
  */
+
+/* after receiving more context, updated PA script:
+ * 
+var hours=function(x,y){
+	return new GlideSchedule('d22a6e68dbd5cb400abf9c94db961921','US/Pacific').duration(new GlideDateTime(x), new GlideDateTime(y)).getNumericValue()/(60*60*1000);
+};
+hours(current.opened_at, current.resolved_at);
+ *
+ * 
+ * /
