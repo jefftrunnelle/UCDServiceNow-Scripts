@@ -24,8 +24,6 @@ function findValue() {
     if (Math.abs(gr.start.dateNumericValue() - gr2.sys_created_on.dateNumericValue()) < 5000) compare2 = true;
     gs.print('compare: ' + compare2);
 
-} 
-
 /* example output
  * 
 *** Script: sys_meta: sys_meta
@@ -172,3 +170,5 @@ function findValue() {
 *** Script: 2000
 *** Script: compare: true
 */
+
+} 
